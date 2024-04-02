@@ -1,0 +1,141 @@
+<html>
+    <head>
+    <title>tabela</title>
+    </head>
+    <body>
+        <h3>Tabela com grades </h3>
+        <table border=" 1">
+            <!--o border adicionado após table serve para gradear a tabela, 1 é o padrão utilizado-->
+            <tr>
+                <!--tr cria linha-->
+                <td>Célula1</td>
+                <td>Célula2</td>
+                <td>Célula3</td>
+                <!--td cria célula-->
+            </tr>
+
+            <tr>
+                
+                <td>Célula4</td>
+                <td>Célula5</td>
+                <td>Célula6</td>
+            </tr>
+        </table >
+
+        <table border="1">
+            <td colspan="2" align="center">Grupo A</align></td><!--colspan= agrupa duas células horizontais, 2 é a quantidade de células-->
+            <tr>
+                <td align="center">Palmeiras 0</td>
+                <td align="center">1 N.Horizonte</td>
+            </tr>
+            <td colspan="2" align="center">Grupo B</align></td><!--colspan= agrupa duas células horizontais, 2 é a quantidade de células-->
+            <tr>
+                <td align="center">São Paulo 1</td>
+                <td align="center">1 Grêmio</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <td rowspan="2" align="center">Grupo A</align></td><!--rowspan= agrupa duas células verticais, 2 é a quantidade de células-->
+                <td align="center">Palmeiras 0</td>
+                <tr><td align="center">1 N.Horizonte</td></tr>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center">Grupo B</align></td>
+                <td align="center">São Paulo 1</td>
+                <tr><td align="center">1 Grêmio</td></tr>
+            </tr>
+        </table>
+        <h3>Copa 2026</h3>
+        <table border="1">
+            <tr>
+                <td rowspan="4" align="center">Grupo A</align></td><!--rowspan= agrupa duas células verticais, 2 é a quantidade de células-->
+                <td align="center">Japão</td>
+                <tr><td align="center">China</td></tr>
+                <tr><td align="center">Coreia</td></tr>
+                <tr><td align="center">Tailandia</td></tr>
+            </tr>
+            <table border="1"><thead>
+                <tr><th>Marca</th><th>Modelo</th><th>Ano</th><th>Valor</th></tr>
+                </thead>
+                <tr>
+                    <td>Hyundai</td>
+                    <td>Azera</td>
+                    <td>2014</td>
+                    <td>R$100.000,00</td>
+                </tr>
+                <tr>
+                    <td>BYD</td>
+                    <td>Dream</td>
+                    <td>2024</td>
+                    <td>R$120.000,00</td>
+                </tr>
+                <tr><tfoot><td colspan="4"><strong>Melhor preço da América Latina</strong></td></tfoot>
+                    
+                </tr>
+            </table>
+            <p>
+                HTML Formulários<br >
+                Senha:
+                <input type="text" name="senha"
+                size="15" maxlength="8"
+                value="">
+                </p>
+
+                <p> <h1> Turma 313 </h1> </p> <br>
+ <form action="alunos.php" method="post">
+ <p>Nome do aluno : 
+<input type="text" name="nome"> <br> <br> 
+Senha: <input size="15" maxlength="8"  
+type="password" name="senha">  <br> <br>  
+<p> <h1> Turma 3xx - checkbox </h1> </p>
+<input type=radio name="turno" value="manha"  
+             checked> Matutino <br>
+ <input type=radio name="turno" value="tarde"> 
+            Vespertino <br>
+ <input type=radio name="turno" value="noite"> Noturno 
+            <br>
+            <select  name=profs>
+                <option value=”Clau”> Clau </option>
+                <option value=”Latore”> Latore </option>
+                <option value=”Luk”> Luk </option>
+                <option value=”Miyuki”> Miyuki </option>
+                </select>
+                <select  name=profs size 4 multiple>
+                    <option value=”Clau”> Clau </option>
+                    <option value=”Latore”> Latore </option>
+                    <option value=”Luk”> Luk </option>
+                    <option value=”Miyuki”> Miyuki </option>
+                    </select>
+                    <textarea rows=5 cols=20>  Digite aqui  
+                    </textarea>
+
+                    <input type="range">
+ <html>
+ <form method='POST' action='recebe-dados.php'>
+ <input type="range" id="volume" 
+name="volume" min="0" max="100"
+ value="50" step="10" > <span>100 </span> 
+<label for="volume"> Volume <label>
+ </form>
+ </html>
+ Aw1-3      Prof. L 
+ <form method='POST' action='recebe.php'> 0
+    <input id="percent" type="range"
+    Oninput=
+    "getElementById('exibePercent').innerHTML=this.value;" 
+   min="0" max="100" value="0">
+    <span id="exibePercent">100 </span>
+    Aw1-3      Prof. L U K
+    Aw1-3      Prof. L U K
+    </form>
+
+ <input type=checkbox name="curso" value="AW1" checked> AW1 <br>
+ <input type=checkbox name="curso" value="LP3"> LP3 <br>
+ <input type=checkbox name="curso" value="TPO"> TPO <br>
+<input type="submit" name="enviar" value="Enviar">
+<input type ="reset" value="Limpar"></p>
+ </form>
+    </body>
+</html>
