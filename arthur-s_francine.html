@@ -1,0 +1,37 @@
+<html>
+    <head>
+            <h1 align="middle">Cadastro do IFSP</h1>
+    </head>
+    <style align="center"></style>
+    <body >
+        <p>
+        <form>
+            Login <input type="text" name="Login"size="15">
+               Senha <input type="password" name="Senha"size="15"><br><br>
+            Nome <input type="text" name="Nome"size="40"><br>
+            Tipo<input type="radio" name="tipo">Administrativo
+            <input type="radio" name="tipo">Professor
+            <input type="radio" name="tipo">Aluno<br>
+            <range>
+                Idade 0<input type="range" min="0" max="92" value="Idade" step="2" >92<br>
+            </range>
+            Escolha a(s) sua(s) disciplina(s)
+            <input type="checkbox" name="aula" value="AW1" checked>AW1<br>
+            <input type="checkbox" name="aula" value="LP3" >LP3<br>
+            <input type="checkbox" name="aula" value="TPO">TPO<br>
+            <p>Escolha seu professor</p>
+            <select size 4 multiple align="">
+                <option value="Clau" checked>Clau</option>
+                <option value="Latorre" checked>Latorre</option>
+                <option value="Luk" >Luk</option>
+                <option value="Miyuki" checked>Miyuki</option><br>
+            </select><br>
+            <p>Faça um comentário sobre o curso:</p>
+            <textarea rows="5" cols="200"  >"O Luk só me enche o ..........."
+            </textarea><br>
+            <input type="reset" name="Limpar" value="Limpar" align="center">
+            <input type="submit" name="Enviar" value="Enviar">
+        </form>
+        </p>
+    </body>
+</html>
