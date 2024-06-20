@@ -1,5 +1,7 @@
-h1 { color: whitesmoke}
-h1 { color: red }
-h2 { color: green }
-h3 { color: pink }
-p { color: blue }
+h1 { color: rgb(112, 245, 223) }
+h2 { color: rgb(82, 8, 179) }
+h3 { color: rgb(184, 77, 95) }
+p { color: rgb(132, 132, 233) }
+button { color: salmon;}
+body {background-color: black; opacity: 0.5;}
+<!-- se der dois comandos para a mesma estrutura, a segunda que será feita -->
