@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de hover</title>
+    <style>
+        main {
+            display: grid;
+            gap: 5rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        button {
+            padding: .325rem .725rem;
+
+            border: 2px solid gray;
+            border-radius: .25rem;
+
+            transition: all 150ms ease-in-out;
+
+            cursor: pointer;
+        }
+
+        button:active {
+            opacity: 0.8;
+        }
+
+        main :nth-child(1):hover {
+            background-color: lightcoral;
+            color: rgb(128, 0, 0);
+        }
+
+        main :nth-child(2):hover {
+            border-radius: 100%;
+        }
+
+        main :nth-child(3):hover {
+            border-style: dotted;
+        }
+
+        body:has(main :nth-child(4):hover) {
+            background-color: black;
+        }
+
+        main :nth-child(5):hover {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        main :nth-child(6):hover {
+            scale: 1 2.5;
+        }
+
+        main :nth-child(7):hover {
+            scale: 1 0.5;
+        }
+
+        main :nth-child(8):hover {
+            scale: 2.5 1;
+        }
+
+        main :nth-child(9):hover {
+            scale: 0.3 1;
+        }
+
+        main :nth-child(10):hover {
+            animation: 500ms balancar linear infinite;
+        }
+
+        @keyframes balancar {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(15deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            75% {
+                transform: rotate(-15deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        main :nth-child(11):hover {
+            opacity: 0;
+            filter: blur(10px);
+        }
+
+        main :nth-child(13) {
+            position: sticky;
+
+            height: 10rem;
+            width: 10rem;
+        }
+
+        main :nth-child(13):hover {
+            background: url("https://i.kym-cdn.com/photos/images/original/002/218/209/9f9.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            color: transparent;
+        }
+
+        main:has(*:hover) {
+            background-color: black;
+        }
+
+        main :nth-child(14):hover {
+            -webkit-box-shadow: 0px 0px 127px 27px rgba(171,171,171,1);
+            -moz-box-shadow: 0px 0px 127px 27px rgba(171,171,171,1);
+            box-shadow: 0px 0px 127px 27px rgba(171,171,171,1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+
+            padding-block: 1rem;
+        }
+
+        .aside {
+            position: absolute;
+            right: 0;
+            
+            transition: 150ms ease-in-out;
+
+            background-color: lightgray;
+            border-radius: .25rem;
+            padding: 3rem;
+            border: 1px solid gray;
+
+            cursor: pointer;
+
+            z-index: 10;
+        }
+
+        .aside {
+            transform: translateX(75%);
+        }
+
+        .aside:hover {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Site luk chau lin &copy;</p>
+        <button id="menu">menu</button>
+    </header>
+    <main>
+        <button>Mudar de cor</button>
+        <button>Mudar de forma</button>
+        <button>Mudar a borda</button>
+        <button id="site">Mudar o site</button>
+        <button>Mudar a fonte</button>
+        <button>Aumentar</button>
+        <button>Encolher</button>
+        <button>Alongar</button>
+        <button>Comprimir</button>
+        <button>Balangar</button>
+        <button>Desaparecer</button>
+        <button>Desaparecer</button>
+        <button>Efeito LUk cho man &copy;</button>
+        <button>brilho</button>
+    </main>
+    <button class="aside">
+        captcha
+    </button>
+</body>
+</html>
