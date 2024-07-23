@@ -1,0 +1,68 @@
+/* Cores, plano de fundo, textos, fontes */
+body {
+  background-color: #e697c4;
+  color: #46c1ae;
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(60, 60, 185);
+}
+
+/* Formatação visual, posicionamento */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 80px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cascata, especificidade, herança */
+.gallery img {
+  border: 5px solid black; /* Especificidade alta */
+}
+
+.gallery .highlight img {
+  border: 10px solid red; /* Maior especificidade */
+}
+
+/* Efeitos e transição */
+.gallery img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação, media queries, design responsivo */
+.gallery img {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
